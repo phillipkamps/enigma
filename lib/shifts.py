@@ -29,11 +29,9 @@ class Shifts:
             c_shift = int(keys["c_key"]) + int(offsets["c_offset"]),
             d_shift = int(keys["d_key"]) + int(offsets["d_offset"])
             )
-        import ipdb; ipdb.set_trace()
         return result
 
 wip = Shifts()
 key = "02715"
 date = "040895"
 final_shifts = wip.final_shifts(key, date)
-
