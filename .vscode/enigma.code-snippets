@@ -17,7 +17,7 @@
 	// }
 	"prython": {
 		"scope": "python",
-		"prefix": "prython",
+		"prefix": "ipdb",
 		"body": "import ipdb; ipdb.set_trace()",
 		"description": "pry for python"
 	}

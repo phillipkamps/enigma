@@ -1,4 +1,3 @@
-
 class Shifts:
     def keygen(self, key):
         result = dict(
@@ -30,8 +29,3 @@ class Shifts:
             d_shift = int(keys["d_key"]) + int(offsets["d_offset"])
             )
         return result
-
-wip = Shifts()
-key = "02715"
-date = "040895"
-final_shifts = wip.final_shifts(key, date)
