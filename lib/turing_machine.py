@@ -1,4 +1,4 @@
-from shifts import Shifts
+from ..lib.shifts import Shifts
 import numpy as np
 # import sys
 # sys.path.insert(0, '/enigma/lib/shifts.py')
@@ -53,15 +53,15 @@ class TuringMachine():
         return "".join(unscrambled)
 
 
-wip = TuringMachine()
-message = 'keder ohulw'
-key = "02715"
-date = "040895"
-char_shifts = wip.char_shifts(message, key, date)
-alpha = wip.alphabetically_index_message(message)
-decalcd = wip.decrypt_calc_shifts(message, key, date)
-unscrambled = wip.unscramble(message, key, date)
-import ipdb; ipdb.set_trace()
+# wip = TuringMachine()
+# message = 'keder ohulw'
+# key = "02715"
+# date = "040895"
+# char_shifts = wip.char_shifts(message, key, date)
+# alpha = wip.alphabetically_index_message(message)
+# decalcd = wip.decrypt_calc_shifts(message, key, date)
+# unscrambled = wip.unscramble(message, key, date)
+# import ipdb; ipdb.set_trace()
 
 # wip = TuringMachine()
 # message = 'hello world'
