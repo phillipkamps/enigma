@@ -1,4 +1,4 @@
-from ..lib.shifts import Shifts
+from ..src.shifts import Shifts
 
 key = "02715"
 date = "040895"

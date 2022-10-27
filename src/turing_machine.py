@@ -1,4 +1,4 @@
-from ..lib.shifts import Shifts
+from ..src.shifts import Shifts
 import numpy as np
 # import sys
 # sys.path.insert(0, '/enigma/lib/shifts.py')

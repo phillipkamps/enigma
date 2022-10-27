@@ -1,7 +1,7 @@
 from platform import machine
 import random
 from datetime import date
-from ..lib.turing_machine import TuringMachine
+from ..src.turing_machine import TuringMachine
 
 class Enigma:
     def encrypt(self, message, key = str(random.randint(10000, 99999)), date = date.today().strftime("%d%m%y")):

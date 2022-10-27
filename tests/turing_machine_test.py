@@ -1,4 +1,4 @@
-from ..lib.turing_machine import TuringMachine
+from ..src.turing_machine import TuringMachine
 # import sys
 # sys.path.insert(0, '/enigma/lib/turing_machine.py')
 # from turing_machine import TuringMachine

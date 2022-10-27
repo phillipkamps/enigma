@@ -1,4 +1,4 @@
-from ..lib.enigma import Enigma
+from ..src.enigma import Enigma
 from datetime import date
 
 wip = Enigma()
