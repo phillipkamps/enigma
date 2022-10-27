@@ -1,18 +1,18 @@
 from platform import machine
 import random
 from datetime import date
-from ..src.turing_machine import TuringMachine
+from turing_machine import TuringMachine
 
 class Enigma:
     def encrypt(self, message, key = str(random.randint(10000, 99999)), date = date.today().strftime("%d%m%y")):
-        machine = TuringMachine()
+        machine = TuringMachine(name="hi", key=key, date=date)
         return dict(
             encryption = machine.scramble(message, key, date),
             key = key,
             date = date)
 
     def decrypt(self, cyphertext, key, date = date.today().strftime("%d%m%y")):
-        machine = TuringMachine()
+        machine = TuringMachine(name="hi", key=key, date=date)
         return dict(
             decryption = machine.unscramble(cyphertext, key, date),
             key = key,
