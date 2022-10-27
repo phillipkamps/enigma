@@ -4,7 +4,7 @@ Setup:
 
 For now, this program is run locally. First, clone the repo, and ```pip install```
  
- navigate to ```lib/encrypt_runner.py```
+ navigate to ```src/encrypt_runner.py```
   
  To encrypt message:
   - put your message in to the ```message``` variable
