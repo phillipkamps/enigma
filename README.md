@@ -2,9 +2,9 @@ Python version of a Turing School project, see [https://backend.turing.edu/modul
 
 Setup:
 
-For now, this program is run locally. 
-  - clone the repo, ```pip install```
-  - navigate to ```lib/runner.py```
+For now, this program is run locally. First, clone the repo, and ```pip install```
+ 
+ navigate to ```lib/encrypt_runner.py```
   
  To encrypt message:
   - put your message in to the ```message``` variable
