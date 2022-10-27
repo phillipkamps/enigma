@@ -12,7 +12,7 @@ For now, this program is run locally. First, clone the repo, and ```pip install`
       ```date``` must be in ddmmyy format, as a string
       ```key``` must be 5 numeric characters, as a string
   - if using ```key``` and/or ```date``` variables, add them to the arguments on line 7
-  - run ```python lib/encrypt_runner.rb``` to encrypt message
+  - run ```python src/encrypt_runner.rb``` to encrypt message
   
   To decrypt message:
   - put your encrypted string in to the ```cyphertext``` variable
