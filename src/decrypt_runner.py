@@ -1,4 +1,4 @@
-from src.enigma import Enigma
+from enigma import Enigma
 
 cyphertext = "put encrypted string here"
 key = "12345"

@@ -16,8 +16,8 @@ setup(
     version="0.1.0",
     author="Phillip Kamps",
     author_email="phillip.kamps@slalom.com",
-    packages=find_packages(where="lib"),
-    package_dir={"": "lib"},
+    packages=find_packages(where="src"),
+    package_dir={"": "src"},
     maintainer="Phillip Kamps",
     maintainer_email="phillip.kamps@slalom.com",
     license="GNU",
@@ -26,6 +26,7 @@ setup(
     long_description=read("README.md"),
     python_requires=">=3.5",
     install_requires=[
-        "pytest>=7.1.2"
+        "pytest>=7.1.2",
+        "numpy>=1.23.4"
     ]
 )
