@@ -1,8 +1,7 @@
-from ..src.shifts import Shifts
+from shifts import Shifts
 import numpy as np
 # import sys
 # sys.path.insert(0, '/enigma/lib/shifts.py')
-# from shifts import Shifts
 
 class TuringMachine():
     def alphabetically_index_message(self, message):

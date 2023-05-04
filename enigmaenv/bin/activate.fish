@@ -29,7 +29,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/phillip.kamps/bench_stuff/enigma/lib/enigmaenv"
+set -gx VIRTUAL_ENV "/Users/phillip.kamps/bench_stuff/enigma/enigmaenv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

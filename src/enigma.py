@@ -1,23 +1,27 @@
-from platform import machine
 import random
-from datetime import date
-from ..src.turing_machine import TuringMachine
+from datetime import date as dtobj
+from turing_machine import TuringMachine
 
 class Enigma:
-    def encrypt(self, message, key = str(random.randint(10000, 99999)), date = date.today().strftime("%d%m%y")):
+    def encrypt(self, message, key, date = dtobj.today().strftime("%d%m%y")):
         machine = TuringMachine()
-        return dict(
-            encryption = machine.scramble(message, key, date),
-            key = key,
-            date = date)
+        if key == '':
+           key = f'{random.randint(10000, 99999)}'
+        return {
+            "encryption": machine.scramble(message, key, date),
+            "key": key,
+            "date": date
+            }
 
-    def decrypt(self, cyphertext, key, date = date.today().strftime("%d%m%y")):
+    def decrypt(self, encrypted_message, key, date):
         machine = TuringMachine()
-        return dict(
-            decryption = machine.unscramble(cyphertext, key, date),
-            key = key,
-            date = date
-        )
+        if date == '':
+            date = dtobj.today().strftime("%d%m%y")
+        return {
+            "decryption": machine.unscramble(encrypted_message, key, date),
+            "key": key,
+            "date": date
+        }
 
 # wip = Enigma()
 # key = '02715'
